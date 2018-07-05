@@ -9,8 +9,9 @@ using System.Threading.Tasks;
 namespace CareerCloud.BusinessLogicLayer
 {
 
-    public class SystemCountryCodeLogic : BaseLogic<SystemCountryCodePoco>
+    public class SystemCountryCodeLogic 
     {
+
         public SystemCountryCodeLogic(IDataRepository<SystemCountryCodePoco> repository) : base(repository)
         {
         }
