@@ -1,0 +1,13 @@
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\bin\Debug\CareerCloud.BusinessLogicLayer.dll
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\bin\Debug\CareerCloud.BusinessLogicLayer.pdb
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\bin\Debug\CareerCloud.ADODataAccessLayer.dll
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\bin\Debug\CareerCloud.DataAccessLayer.dll
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\bin\Debug\CareerCloud.Pocos.dll
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\bin\Debug\CareerCloud.ADODataAccessLayer.pdb
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\bin\Debug\CareerCloud.DataAccessLayer.pdb
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\bin\Debug\CareerCloud.Pocos.pdb
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\obj\Debug\CareerCloud.BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\obj\Debug\CareerCloud.BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\obj\Debug\CareerCloud.BusinessLogicLayer.csproj.CopyComplete
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\obj\Debug\CareerCloud.BusinessLogicLayer.dll
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.BusinessLogicLayer\obj\Debug\CareerCloud.BusinessLogicLayer.pdb

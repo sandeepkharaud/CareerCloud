@@ -1,0 +1,6 @@
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.Pocos\bin\Debug\CareerCloud.Pocos.dll
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.Pocos\bin\Debug\CareerCloud.Pocos.pdb
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.Pocos\obj\Debug\CareerCloud.Pocos.csprojAssemblyReference.cache
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.Pocos\obj\Debug\CareerCloud.Pocos.csproj.CoreCompileInputs.cache
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.Pocos\obj\Debug\CareerCloud.Pocos.dll
+C:\Users\Sonna\source\repos\CareerCloud\CareerCloud.Pocos\obj\Debug\CareerCloud.Pocos.pdb
