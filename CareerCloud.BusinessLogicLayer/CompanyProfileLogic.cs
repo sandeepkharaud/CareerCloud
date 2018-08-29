@@ -31,11 +31,22 @@ namespace CareerCloud.BusinessLogicLayer
             foreach (CompanyProfilePoco poco in pocos)
             {
 
-                if (!validWebsiteExtensions.Any(t => poco.CompanyWebsite.EndsWith(t)))
+                if (string.IsNullOrEmpty(poco.CompanyWebsite))
+                {
+                    exceptions.Add(new ValidationException(600, $"Cannot be empty"));
+                }
+                else if(!validWebsiteExtensions.Any(t => poco.CompanyWebsite.EndsWith(t)))
                 {
                     exceptions.Add(new ValidationException(600, $"Valid websites must end with the following extensions – '.ca', '.com', '.biz'"));
                 }
-                string[] phoneComponents = poco.ContactPhone.Split('-');
+
+                if (string.IsNullOrEmpty(poco.ContactPhone))
+                {
+                    exceptions.Add(new ValidationException(601, $"Cannot be empty"));
+                }
+                else
+                {
+                    string[] phoneComponents = poco.ContactPhone.Split('-');
                     if (phoneComponents.Length < 3)
                     {
                         exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number "));
@@ -44,15 +55,16 @@ namespace CareerCloud.BusinessLogicLayer
                     {
                         if (phoneComponents[0].Length < 3)
                         {
-                        exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number "));
-                    }
-                    else if (phoneComponents[1].Length < 3)
+                            exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number "));
+                        }
+                        else if (phoneComponents[1].Length < 3)
                         {
-                        exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number "));
-                    }
-                    else if (phoneComponents[2].Length < 4)
+                            exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number "));
+                        }
+                        else if (phoneComponents[2].Length < 4)
                         {
-                        exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number "));
+                            exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number "));
+                        }
                     }
                 }
                 

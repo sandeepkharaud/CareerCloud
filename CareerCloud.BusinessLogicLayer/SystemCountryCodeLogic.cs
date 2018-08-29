@@ -9,23 +9,39 @@ using System.Threading.Tasks;
 namespace CareerCloud.BusinessLogicLayer
 {
 
-    public class SystemCountryCodeLogic 
+    public class SystemCountryCodeLogic: SystemCountryCodePoco
     {
+        private IDataRepository<SystemCountryCodePoco> _repository;
+        public SystemCountryCodeLogic(IDataRepository<SystemCountryCodePoco> repository)
+        {
+            _repository = repository;
+        }
+        public SystemCountryCodePoco Get(String code)
+        {
+            return _repository.GetSingle(c => c.Code == code);
+        }
 
-        public SystemCountryCodeLogic(IDataRepository<SystemCountryCodePoco> repository) : base(repository)
+        public List<SystemCountryCodePoco> GetAll()
         {
+            IList<SystemCountryCodePoco> pocos=_repository.GetAll();
+            return pocos.ToList();
         }
-        public override void Add(SystemCountryCodePoco[] pocos)
+
+        public void Delete(SystemCountryCodePoco[] pocos)
+        {
+            _repository.Remove(pocos);
+        }
+        public void Add(SystemCountryCodePoco[] pocos)
         {
             Verify(pocos);
-            base.Add(pocos);
+            _repository.Add(pocos);
         }
-        public override void Update(SystemCountryCodePoco[] pocos)
+        public void Update(SystemCountryCodePoco[] pocos)
         {
             Verify(pocos);
-            base.Update(pocos);
+            _repository.Add(pocos);
         }
-        protected override void Verify(SystemCountryCodePoco[] pocos)
+        protected void Verify(SystemCountryCodePoco[] pocos)
         {
             List<ValidationException> exceptions = new List<ValidationException>();
 
