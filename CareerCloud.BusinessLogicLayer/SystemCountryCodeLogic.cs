@@ -39,7 +39,7 @@ namespace CareerCloud.BusinessLogicLayer
         public void Update(SystemCountryCodePoco[] pocos)
         {
             Verify(pocos);
-            _repository.Add(pocos);
+            _repository.Update(pocos);
         }
         protected void Verify(SystemCountryCodePoco[] pocos)
         {

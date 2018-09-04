@@ -11,9 +11,11 @@ namespace CareerCloud.EntityFrameworkDataAccess
 {
     class CareerCloudContext: DbContext
     {
-        public CareerCloudContext() : base(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString)
-        {
+        //@"Data Source=SANDEEP\HUMBERBRIDGING;Initial Catalog=JOB_PORTAL_DB;Integrated Security=True"
 
+        public CareerCloudContext(bool createProxy = true) : base(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString)
+        {
+            Configuration.ProxyCreationEnabled = createProxy;
         }
         public DbSet<ApplicantEducationPoco> ApplicantsEducations { get; set; }
         public DbSet<ApplicantJobApplicationPoco> ApplicantJobApplications { get; set; }
